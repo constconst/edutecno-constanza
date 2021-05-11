@@ -15,6 +15,10 @@ body {
     color: var(--text-color);
 }
 
+.card {
+    background-color: var(--blue);
+}
+
 hr {
     background-color: var(--blue);
     height: 2px;
@@ -53,4 +57,17 @@ i {
     font-size: 30px;
     margin-left: 30px;
     color: var(--text-color);
+}
+
+@media screen and (max-width: 576px) {
+    #quienes-somos,
+    #destacados,
+    #contacto {
+        height: auto;
+        display: block;
+    }
+    .carousel-item img {
+        height: auto;
+        width: 100vw;
+    }
 }

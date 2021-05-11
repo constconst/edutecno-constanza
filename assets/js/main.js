@@ -1,22 +1,26 @@
 $(document).ready(function() {
 
+    // activar popovers
+    $(function() {
+            $('[data-toggle="popover"]').popover()
+        })
+        // Activar carrusel
     $('.carousel').carousel()
-        // Add smooth scrolling to all links
+        // Añadir smotth scrolling a los links con la clase nav-link
     $(".nav-link").on('click', function(event) {
-        // Make sure this.hash has a value before overriding default behavior
+
         if (this.hash !== "") {
-            // Prevent default anchor click behavior
+            // prevenir el default del link
             event.preventDefault();
-            // Store hash
+            // guardar el hash #
             var hash = this.hash;
 
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            // uso el método animate()
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
             }, 800, function() {
 
-                // Add hash (#) to URL when done scrolling (default click behavior)
+                // añadir el hash a la url cuando terminemos de hacer scroll 
                 window.location.hash = hash;
             });
         }
@@ -42,7 +46,6 @@ $(document).ready(function() {
         } else {
             $("#link-destacados").removeClass("active");
         }
-
 
         if ($(window).scrollTop() > $("#contacto").offset().top) {
             $("#link-contacto").addClass("active");
