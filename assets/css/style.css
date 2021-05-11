@@ -1,0 +1,21 @@
+:root {
+    --blue: #31a6b0;
+    --text-color: #f1efe0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+    color: var(--text-color);
+}
+
+hr {
+    background-color: var(--blue);
+    height: 2px;
+}
