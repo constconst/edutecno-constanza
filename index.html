@@ -32,17 +32,17 @@
 
                 <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a id="link-inicio" class="nav-link active" href="#main">Inicio <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#quienes-somos">Quiénes somos</a>
+                            <a id="link-quienes" class="nav-link" href="#quienes-somos">Quiénes somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#destacados">Destacados</a>
+                            <a id="link-destacados" class="nav-link" href="#destacados">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacto">Contacto</a>
+                            <a id="link-contacto" class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -54,13 +54,13 @@
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/carousel1.jpg" class="d-block" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/carousel2.jpg" class="d-block" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/carousel3.jpg" class="d-block" alt="...">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -74,124 +74,128 @@
         </div>
     </section>
 
-    <section id="quienes-somos" class="container">
-        <h2 class="text-center">¿Quiénes somos?</h2>
-        <hr>
-        <div class="row">
-            <div class="col-md-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida ac nibh sed vulputate. Morbi pellentesque sollicitudin tortor, id consequat risus. Sed nec urna posuere, vulputate lectus id, ultricies lorem. Vestibulum eleifend
-                    vulputate mi, at elementum nibh sollicitudin a. Pellentesque non egestas metus. Nulla tristique finibus sem, eu iaculis erat vestibulum sit amet. Etiam id gravida enim. Aenean at enim sem. Nam placerat tortor lorem, vitae porta quam
-                    dapibus quis. Vestibulum suscipit ante sit amet elit placerat dictum. Nullam sem est, porttitor eu eleifend eget, egestas vitae purus. Etiam nec enim id velit consectetur sagittis. Mauris dictum mi nisl. In id interdum nisi. In cursus
-                    massa elit, et sollicitudin purus ullamcorper quis.</p>
-            </div>
-            <div class="col-md-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida ac nibh sed vulputate. Morbi pellentesque sollicitudin tortor, id consequat risus. Sed nec urna posuere, vulputate lectus id, ultricies lorem. Vestibulum eleifend
-                    vulputate mi, at elementum nibh sollicitudin a. Pellentesque non egestas metus. Nulla tristique finibus sem, eu iaculis erat vestibulum sit amet. Etiam id gravida enim. Aenean at enim sem. Nam placerat tortor lorem, vitae porta quam
-                    dapibus quis. Vestibulum suscipit ante sit amet elit placerat dictum. Nullam sem est, porttitor eu eleifend eget, egestas vitae purus. Etiam nec enim id velit consectetur sagittis. Mauris dictum mi nisl. In id interdum nisi. In cursus
-                    massa elit, et sollicitudin purus ullamcorper quis.</p>
-
-            </div>
-            <div class="col-md-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida ac nibh sed vulputate. Morbi pellentesque sollicitudin tortor, id consequat risus. Sed nec urna posuere, vulputate lectus id, ultricies lorem. Vestibulum eleifend
-                    vulputate mi, at elementum nibh sollicitudin a. Pellentesque non egestas metus. Nulla tristique finibus sem, eu iaculis erat vestibulum sit amet. Etiam id gravida enim. Aenean at enim sem. Nam placerat tortor lorem, vitae porta quam
-                    dapibus quis. Vestibulum suscipit ante sit amet elit placerat dictum. Nullam sem est, porttitor eu eleifend eget, egestas vitae purus. Etiam nec enim id velit consectetur sagittis. Mauris dictum mi nisl. In id interdum nisi. In cursus
-                    massa elit, et sollicitudin purus ullamcorper quis.</p>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="destacados" class="container">
-        <h2 class="text-center">Destacados</h2>
-        <hr>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+    <section id="quienes-somos" class="my-5">
+        <div class="container">
+            <h2 class="text-center">¿Quiénes somos?</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida ac nibh sed vulputate. Morbi pellentesque sollicitudin tortor, id consequat risus. Sed nec urna posuere, vulputate lectus id, ultricies lorem. Vestibulum
+                        eleifend vulputate mi, at elementum nibh sollicitudin a. Pellentesque non egestas metus. Nulla tristique finibus sem, eu iaculis erat vestibulum sit amet. Etiam id gravida enim. Aenean at enim sem. Nam placerat tortor lorem, vitae
+                        porta quam dapibus quis. Vestibulum suscipit ante sit amet elit placerat dictum. Nullam sem est, porttitor eu eleifend eget, egestas vitae purus. Etiam nec enim id velit consectetur sagittis. Mauris dictum mi nisl. In id interdum
+                        nisi. In cursus massa elit, et sollicitudin purus ullamcorper quis.</p>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+                <div class="col-md-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida ac nibh sed vulputate. Morbi pellentesque sollicitudin tortor, id consequat risus. Sed nec urna posuere, vulputate lectus id, ultricies lorem. Vestibulum
+                        eleifend vulputate mi, at elementum nibh sollicitudin a. Pellentesque non egestas metus. Nulla tristique finibus sem, eu iaculis erat vestibulum sit amet. Etiam id gravida enim. Aenean at enim sem. Nam placerat tortor lorem, vitae
+                        porta quam dapibus quis. Vestibulum suscipit ante sit amet elit placerat dictum. Nullam sem est, porttitor eu eleifend eget, egestas vitae purus. Etiam nec enim id velit consectetur sagittis. Mauris dictum mi nisl. In id interdum
+                        nisi. In cursus massa elit, et sollicitudin purus ullamcorper quis.</p>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+                <div class="col-md-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida ac nibh sed vulputate. Morbi pellentesque sollicitudin tortor, id consequat risus. Sed nec urna posuere, vulputate lectus id, ultricies lorem. Vestibulum
+                        eleifend vulputate mi, at elementum nibh sollicitudin a. Pellentesque non egestas metus. Nulla tristique finibus sem, eu iaculis erat vestibulum sit amet. Etiam id gravida enim. Aenean at enim sem. Nam placerat tortor lorem, vitae
+                        porta quam dapibus quis. Vestibulum suscipit ante sit amet elit placerat dictum. Nullam sem est, porttitor eu eleifend eget, egestas vitae purus. Etiam nec enim id velit consectetur sagittis. Mauris dictum mi nisl. In id interdum
+                        nisi. In cursus massa elit, et sollicitudin purus ullamcorper quis.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contacto" class="container">
-        <h2 class="text-center">Contacto</h2>
-        <hr>
-        <div class="typeform-widget" data-url="https://form.typeform.com/to/Jalalgox?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div>
-        <script>
-            (function() {
-                var qs, js, q, s, d = document,
-                    gi = d.getElementById,
-                    ce = d.createElement,
-                    gt = d.getElementsByTagName,
-                    id = "typef_orm",
-                    b = "https://embed.typeform.com/";
-                if (!gi.call(d, id)) {
-                    js = ce.call(d, "script");
-                    js.id = id;
-                    js.src = b + "embed.js";
-                    q = gt.call(d, "script")[0];
-                    q.parentNode.insertBefore(js, q)
-                }
-            })()
-        </script>
+    <section id="destacados" class="my-5">
+        <div class="container">
+            <h2 class="text-center">Destacados</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-3 col-12">
+                    <div class="card h-100">
+                        <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="card h-100">
+                        <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="card h-100">
+                        <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer class="container-fluid d-flex justify-content-between p-5">
-        <h2 class="text-white text-center logo">Viajes Chile</h2>
-        <ul>
-            <li>
-                <a href="">
-                    <i class="fab fa-github-alt"></i>
+    <section id="contacto" class="my-5">
+        <div class="container">
+            <h2 class="text-center">Contacto</h2>
+            <hr>
+            <div class="typeform-widget" data-url="https://form.typeform.com/to/Jalalgox?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div>
+            <script>
+                (function() {
+                    var qs, js, q, s, d = document,
+                        gi = d.getElementById,
+                        ce = d.createElement,
+                        gt = d.getElementsByTagName,
+                        id = "typef_orm",
+                        b = "https://embed.typeform.com/";
+                    if (!gi.call(d, id)) {
+                        js = ce.call(d, "script");
+                        js.id = id;
+                        js.src = b + "embed.js";
+                        q = gt.call(d, "script")[0];
+                        q.parentNode.insertBefore(js, q)
+                    }
+                })()
+            </script>
+        </div>
+    </section>
+
+    <footer class="p-5">
+        <div class="container">
+            <div class="row d-flex justify-content-between ">
+                <h2 class="text-white text-center logo">Viajes Chile</h2>
+                <ul class="d-flex">
+                    <li>
+                        <a href="">
+                            <i class="fab fa-github-alt"></i>
 
 
-                </a>
-            </li>
-            <li>
-                <a href=""><i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-linkedin-in"></i>
             </li>
             <li>
                 <a href=""><i class="fab fa-twitter"></i>
             </li>
             <li>
                 <a href=""><i class="fab fa-facebook-f"></i></a>
-            </li>
-        </ul>
-
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
 
