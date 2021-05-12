@@ -29,25 +29,25 @@ $(document).ready(function() {
     $(window).scroll(function() {
         console.log($(window).scrollTop(), "scrolltop")
         console.log($("#quienes-somos").offset(), "kienesomos")
-        if ($(window).scrollTop() > $("#main").offset().top && $(window).scrollTop() < $("#quienes-somos").offset().top) {
+        if ($(window).scrollTop() >= $("#main").offset().top && $(window).scrollTop() < $("#quienes-somos").offset().top) {
             $("#link-inicio").addClass("active");
         } else {
             $("#link-inicio").removeClass("active");
         }
 
-        if ($(window).scrollTop() > $("#quienes-somos").offset().top && $(window).scrollTop() < $("#destacados").offset().top) {
+        if ($(window).scrollTop() >= $("#quienes-somos").offset().top && $(window).scrollTop() < $("#destacados").offset().top) {
             $("#link-quienes").addClass("active");
         } else {
             $("#link-quienes").removeClass("active");
         }
 
-        if ($(window).scrollTop() > $("#destacados").offset().top && $(window).scrollTop() < $("#contacto").offset().top) {
+        if ($(window).scrollTop() >= $("#destacados").offset().top && $(window).scrollTop() < $("#contacto").offset().top) {
             $("#link-destacados").addClass("active");
         } else {
             $("#link-destacados").removeClass("active");
         }
 
-        if ($(window).scrollTop() > $("#contacto").offset().top) {
+        if ($(window).scrollTop() >= $("#contacto").offset().top) {
             $("#link-contacto").addClass("active");
         } else {
             $("#link-contacto").removeClass("active");

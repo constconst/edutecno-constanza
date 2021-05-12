@@ -69,6 +69,7 @@ footer i {
     background-color: var(--blue);
     padding: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .i-background i {
