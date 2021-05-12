@@ -109,4 +109,9 @@ footer i {
         height: auto;
         object-fit: cover;
     }
+    header {
+        background-color: black;
+        position: sticky!important;
+        top: 0;
+    }
 }
