@@ -1,0 +1,43 @@
+* {
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+h5 {
+    font-weight: 300;
+    font-size: 20pt;
+    color: #212529;
+}
+
+i {
+    font-size: 10pt;
+    /* cómo lo puedo alinear sin el padding? */
+    vertical-align: middle;
+    padding-bottom: 2px;
+    padding-right: 5px;
+}
+
+.producto {
+    font-weight: 300;
+    font-size: 16pt;
+}
+
+.direccion {
+    font-weight: 300;
+    font-size: 13pt;
+    vertical-align: middle;
+}
+
+.precio {
+    font-size: 20pt;
+    font-weight: 500;
+}
+
+.precio-anterior {
+    font-size: 16pt;
+}
+
+textarea.form-control {
+    height: 46px;
+    line-height: 30px;
+}
