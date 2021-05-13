@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricomida</title>
+    <meta name="description" content="Ricomida - Disfrutas de comidas y delicias">
+    <meta name="keywords" content="Products Ricomida, Relic recipes, pizza, desserts, culinary recipes">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class=" bg-dark">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="row">
+                    <a class="navbar-brand" href="#">
+                        <h1 class="logo">Ricomida</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon" ></span>
+                </button>
+                </div>
+
+                <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="container">
+        <div class="row  mt-5">
+            <div class="col-sm-6">
+                <img src="assets/img/principal.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-sm-6">
+
+                <h2 class="text-uppercase text-center text-sm-left my-3">Pizza al estilo Chicago con espinacas y champiñones</h2>
+                <hr>
+                <h5 class="text-uppercase text-center text-sm-left">Lorem ipsum dolor sit amet</h5>
+                <div class="botones mt-4 d-flex justify-content-center justify-content-sm-start ">
+                    <button id="enviarCorreo" type="button" class="btn btn-outline-secondary mr-2" data-toggle="tooltip" data-placement="bottom" title="Tooltip on top">Enviar por correo</button>
+                    <button id="favoritos" type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on top">Añadir a favoritos</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="container my-5  d-none d-sm-block">
+        <div id="carouselSlides" class="carousel slide" data-ride="carousel">
+
+            <!--Slides-->
+            <div id="carrusel" class="carousel-inner" role="listbox">
+
+                <div class="carousel-item active">
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="assets/img/slider-1.png" alt="Card image cap">
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 clearfix d-none d-md-block">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="assets/img/slider-2.png" alt="Card image cap">
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 clearfix d-none d-md-block">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="assets/img/slider-3.png" alt="Card image cap">
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 clearfix d-none d-md-block">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="assets/img/slider-4.png" alt="Card image cap">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="assets/img/slider-5.png" alt="Card image cap">
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 clearfix d-none d-md-block">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="assets/img/slider-6.png" alt="Card image cap">
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 clearfix d-none d-md-block">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="assets/img/slider-7.png" alt="Card image cap">
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 clearfix d-none d-md-block">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="assets/img/slider-8.png" alt="Card image cap">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+            <!--Controls-->
+            <ol class="carousel-indicators">
+                <li data-target="#carouselSlides" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselSlides" data-slide-to="1"></li>
+            </ol>
+
+        </div>
+        <hr>
+    </section>
+
+    <section id="recetas" class="container my-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <h5 id="ingredientes" class="text-uppercase">Ingredientes</h5>
+                <h6>Masa</h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+
+                </ul>
+                <ul class="list-group-flush mt-3">
+                    <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+                    <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <h5 id="preparacion" class="text-uppercase">Preparación</h5>
+                <p>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum sagittis gravida. Cras convallis in lectus ut volutpat. In pellentesque magna metus. Morbi quis fermentum dui, ac varius orci. Quisque sit amet nisi ante.
+                    Phasellus quis auctor ipsum. Donec non ipsum sapien. Aenean eget leo ut odio vestibulum elementum tempus ac sapien. Nunc diam orci, consectetur ut varius at, vestibulum eu lectus. Nam nec vulputate nibh. Aliquam erat volutpat.
+
+                </p>
+                <p>2. Sed vestibulum quam tellus, eget elementum eros tristique eu. Suspendisse potenti. Phasellus porta risus non libero faucibus, ut dapibus lectus efficitur. Pellentesque ullamcorper fermentum gravida. Aliquam a nisl ac mi dignissim molestie
+                    facilisis sit amet sapien. Phasellus pretium, arcu quis fringilla imperdiet, tellus nulla varius enim, ac facilisis nibh erat sed magna. Pellentesque vitae porttitor metus. Donec turpis mi, viverra placerat scelerisque eu, luctus sed
+                    erat. Integer sed purus tincidunt, finibus justo sit amet, venenatis augue. Cras iaculis, nibh in porttitor dignissim, ipsum dui vehicula velit, vitae lacinia lectus nibh in lorem. Suspendisse lacinia nec arcu a fringilla. Donec vel
+                    elit consequat, malesuada massa sed, ornare tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed scelerisque libero. Quisque et nisl tortor.
+                </p>
+                <p>3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum sagittis gravida. Cras convallis in lectus ut volutpat. In pellentesque magna metus. Morbi quis fermentum dui, ac varius orci. Quisque sit amet nisi ante.
+                    Phasellus quis auctor ipsum. Donec non ipsum sapien. Aenean eget leo ut odio vestibulum elementum tempus ac sapien. Nunc diam orci, consectetur ut varius at, vestibulum eu lectus. Nam nec vulputate nibh. Aliquam erat volutpat.
+
+                </p>
+                <p>4. Sed vestibulum quam tellus, eget elementum eros tristique eu.</p>
+                <p>5. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum sagittis gravida. Cras convallis in lectus ut volutpat. In pellentesque magna metus. Morbi quis fermentum dui, ac varius orci. Quisque sit amet nisi ante.
+                    Phasellus quis auctor ipsum. Donec non ipsum sapien. Aenean eget leo ut odio vestibulum elementum tempus ac sapien. Nunc diam orci, consectetur ut varius at, vestibulum eu lectus. Nam nec vulputate nibh. Aliquam erat volutpat.
+
+                </p>
+                <p>6. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum sagittis gravida. Cras convallis in lectus ut volutpat. In pellentesque magna metus. Morbi quis fermentum dui, ac varius orci. Quisque sit amet nisi ante.
+                    Phasellus quis auctor ipsum. Donec non ipsum sapien. Aenean eget leo ut odio vestibulum elementum tempus ac sapien. Nunc diam orci, consectetur ut varius at, vestibulum eu lectus. Nam nec vulputate nibh. Aliquam erat volutpat.
+
+                </p>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <section class="recetas-relacionadas container my-5">
+        <h2 class="text-center text-uppercase mb-4">Recetas relacionadas</h2>
+        <div class="row">
+            <div class="col-12 col-sm-4">
+                <div class="card mr-0 mr-sm-3 mb-4 mb-sm-0 img-visible">
+                    <img src="assets/img/recipe-card-1.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-uppercase img-hide">Panqueques con manjar y crema</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4">
+                <div class="card img-visible mb-4 mb-sm-0">
+                    <img src="assets/img/recipe-card-2.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-uppercase img-hide">Tiramisú</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4">
+                <div class="card ml-0 ml-sm-3 img-visible mb-4 mb-sm-0">
+                    <img src="assets/img/recipe-card-3.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-uppercase img-hide">Planteada</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="newsletter" class="container-fluid bg-danger" style="height: 400px;">
+        <div class="row  py-5">
+            <div class="col">
+                <h2 class="text-center text-uppercase text-white mt-5">Suscríbete a nuestro newsletter</h2>
+                <h4 class="text-center text-white">y obtén las mejores recetas que tenemos en Ricomida</h4>
+                <button type="button" class="btn btn-outline-light mt-5 d-block mx-auto px-5">Empezar</button>
+            </div>
+        </div>
+
+    </section>
+    <footer class="container-fluid bg-dark p-5">
+        <h2 class="text-white text-center logo">Ricomida</h2>
+    </footer>
+
+
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+
+</html>
