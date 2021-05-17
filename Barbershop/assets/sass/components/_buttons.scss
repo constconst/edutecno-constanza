@@ -1,0 +1,22 @@
+// primary button w/hover and focus states
+.button {
+    display: inline-block;
+    font-family: $sans-serif;
+    color: $white;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: $nickel;
+    // por qué no me pescó sin el important?
+    padding: 10px 20px!important;
+    border-radius: 50px!important;
+    border: $btn-border-width solid transparent;
+    @include transition($btn-transition);
+    @include hover() {
+        text-decoration: none;
+        background-color: $light-gray;
+    }
+    &:focus {
+        border: 2px solid $light-gray!important;
+    }
+}

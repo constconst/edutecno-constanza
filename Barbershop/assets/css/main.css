@@ -10043,6 +10043,7 @@ li {
   color: #fff;
   font-size: 70px;
   text-align: center;
+  font-style: italic;
 }
 
 footer {
@@ -10060,6 +10061,32 @@ footer {
   background-color: #E6E7E7;
   height: 134px;
   margin: 0;
+}
+
+.button {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #6C6E70;
+  padding: 10px 20px !important;
+  border-radius: 50px !important;
+  border: 1px solid transparent;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+}
+.button:hover {
+  text-decoration: none;
+  background-color: #D1D1D1;
+}
+.button:focus {
+  border: 2px solid #D1D1D1 !important;
 }
 
 /*# sourceMappingURL=main.css.map */
