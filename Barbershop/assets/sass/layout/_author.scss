@@ -1,5 +1,8 @@
 .author {
     height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .author_rrss,
@@ -8,4 +11,9 @@
     &:hover {
         color: $secondary-scheme;
     }
+}
+
+.author_name {
+    font-family: $display;
+    font-style: $font-italic;
 }
