@@ -1,0 +1,26 @@
+// ¿qué sentido tiene ponerle header al header?
+.header {
+    z-index: 2;
+    background-color: $eerie-black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header_logo {
+    max-width: 78px;
+}
+
+.navigation_list {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation_item {
+    margin-left: 25px;
+}
+
+.navigation_item--active a {
+    color: $spanish-pink;
+}
