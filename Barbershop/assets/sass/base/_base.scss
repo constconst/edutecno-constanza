@@ -1,0 +1,32 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+/**
+ * Basic styles for links
+ */
+
+a {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: $spanish-pink;
+    }
+}
+
+
+/**
+ * Basic styles for lists
+ */
+
+li {
+    list-style-type: none;
+}
