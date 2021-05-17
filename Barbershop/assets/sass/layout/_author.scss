@@ -1,0 +1,11 @@
+.author {
+    height: 330px;
+}
+
+.author_rrss,
+.author_web {
+    color: $primary-scheme;
+    &:hover {
+        color: $secondary-scheme;
+    }
+}
