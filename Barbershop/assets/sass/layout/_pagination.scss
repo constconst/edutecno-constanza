@@ -1,8 +1,13 @@
-.pagination {
+.pagination-container {
     background-color: $platinum;
     height: 134px;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.page_link {
+    color: $eerie-black!important;
+    border-radius: 0 20px 20px 0!important;
 }
