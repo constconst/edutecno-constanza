@@ -21,6 +21,13 @@
     margin-left: 25px;
 }
 
-.navigation_item--active a {
-    color: $spanish-pink;
+.navigation_item a {
+    color: $white;
+    &:hover {
+        color: $spanish-pink;
+    }
+}
+
+.navigation_item_link--active {
+    color: $spanish-pink!important;
 }

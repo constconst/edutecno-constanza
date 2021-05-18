@@ -9961,6 +9961,8 @@ a {
 
 p {
   line-height: 40px;
+  font-weight: 300;
+  color: #6C6E70;
 }
 
 img {
@@ -10010,8 +10012,15 @@ li {
   margin-left: 25px;
 }
 
-.navigation_item--active a {
+.navigation_item a {
+  color: #fff;
+}
+.navigation_item a:hover {
   color: #ECBCBA;
+}
+
+.navigation_item_link--active {
+  color: #ECBCBA !important;
 }
 
 .hero {
@@ -10052,6 +10061,10 @@ li {
   padding-bottom: 50px;
 }
 
+.main_date {
+  font-family: "Playfair Display", serif;
+}
+
 .author {
   height: 330px;
   display: flex;
@@ -10061,7 +10074,7 @@ li {
 
 .author_rrss,
 .author_web {
-  color: #E56353;
+  color: #ECBCBA;
 }
 .author_rrss:hover,
 .author_web:hover {
@@ -10087,13 +10100,18 @@ footer {
   max-width: 122px;
 }
 
-.pagination {
+.pagination-container {
   background-color: #E6E7E7;
   height: 134px;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.page_link {
+  color: #121619 !important;
+  border-radius: 0 20px 20px 0 !important;
 }
 
 .button {
