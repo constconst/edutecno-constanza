@@ -1,0 +1,31 @@
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        text-align: center;
+        font-weight: $font-bold;
+        margin-top: 20px;
+    }
+    p {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+.section_image {
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+    &--large {
+        max-width: 800px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.section {
+    background-color: $quick-silver;
+    width: 100%;
+}

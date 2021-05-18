@@ -1,0 +1,15 @@
+.subtitle {
+    background-color: $jelly-bean;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        color: $white;
+        font-size: $large;
+    }
+    button {
+        display: block;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,19 @@
+.hero {
+    height: calc(100vh - 40px);
+    background-color: $jelly-bean;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero_text,
+.hero_secondtext {
+    font-size: $x-large;
+}
+
+// no me pescan estas cosas si no les doy los estilos que ya vienen de bootstrap
+h2 {
+    font-weight: $font-bold;
+}
