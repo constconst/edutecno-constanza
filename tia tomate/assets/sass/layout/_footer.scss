@@ -1,3 +1,13 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+footer {
+    background-color: $granite-gray;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 300px;
+    }
+}

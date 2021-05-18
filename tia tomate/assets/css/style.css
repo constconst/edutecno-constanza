@@ -10293,17 +10293,12 @@ a {
   color: #E56353;
   text-decoration: none;
 }
-a:hover, a:active, a:focus {
-  color: #222222;
-  text-decoration: underline;
-}
 
 /**
  * Basic typography style for copy text
  */
 body {
-  color: #222222;
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 /**
@@ -10322,8 +10317,6 @@ body {
  * 3. Leave some space on the edges, especially valuable on small screens
  */
 .container {
-  max-width: 1180px;
-  /* 1 */
   margin-left: auto;
   /* 2 */
   margin-right: auto;
@@ -10363,6 +10356,90 @@ body {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+.hero {
+  height: calc(100vh - 40px);
+  background-color: #E56353;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero_text,
+.hero_secondtext {
+  font-size: 70px;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section h3 {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 20px;
+}
+section p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section_image {
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+.section_image--large {
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+}
+
+.section {
+  background-color: #A0A0A0;
+  width: 100%;
+}
+
+.subtitle {
+  background-color: #E56353;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subtitle h2 {
+  color: #fff;
+  font-size: 50px;
+}
+.subtitle button {
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #686963;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer img {
+  width: 300px;
+}
+
+.main-button {
+  border-radius: 50px;
+  width: 200px;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

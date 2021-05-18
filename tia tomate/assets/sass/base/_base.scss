@@ -32,8 +32,4 @@ html {
 a {
     color: $jelly-bean;
     text-decoration: none;
-    @include on-event {
-        color: $text-color;
-        text-decoration: underline;
-    }
 }
