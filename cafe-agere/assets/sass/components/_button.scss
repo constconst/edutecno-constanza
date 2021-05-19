@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+// BUTTONS
+// GENERIC BUTTON
+.button {
+    font-family: $mono;
+    font-size: $medium;
+    width: 166px;
+    height: 50px;
+    padding: 10px 17px;
+    border: 1px solid $black;
+    &--primary {
+        color: $quick-silver;
+        border: 1px solid $quick-silver;
+    }
+    &--primary:hover {
+        color: $black;
+        border: 1px solid $black;
+    }
+    &--secondary {
+        color: $white;
+        border: 1px solid $shiny-shamrock;
+        background-color: $shiny-shamrock;
+    }
+    &--secondary:hover {
+        color: $outer-space;
+        border: 1px solid $turquoise-green;
+        background-color: $turquoise-green;
+    }
+}
