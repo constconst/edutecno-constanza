@@ -10020,7 +10020,7 @@ li {
 }
 
 .navigation_item_link--active {
-  color: #ECBCBA !important;
+  color: #ECBCBA;
 }
 
 .hero {
@@ -10086,6 +10086,25 @@ li {
   font-style: italic;
 }
 
+.pagination-container {
+  background-color: #E6E7E7;
+  height: 134px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-item:last-child .page-link {
+  color: #121619;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.page-item:first-child .page-link {
+  color: #121619;
+  border-radius: 15px 0 0 15px;
+}
+
 footer {
   background-color: #121619;
   height: 206px;
@@ -10098,20 +10117,6 @@ footer {
   display: block;
   margin: 0 auto;
   max-width: 122px;
-}
-
-.pagination-container {
-  background-color: #E6E7E7;
-  height: 134px;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.page_link {
-  color: #121619 !important;
-  border-radius: 0 20px 20px 0 !important;
 }
 
 .button {

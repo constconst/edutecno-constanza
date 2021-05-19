@@ -10101,16 +10101,8 @@ li {
 }
 
 .page-item:last-child .page-link {
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 1.25rem;
-}
-
-.page-item:first-child .page-link {
-  margin-left: 0;
-  border-radius: 0 20px 20px 0 !important;
-}
-.page-item:last-child .page-link {
-  border-radius: 0 20px 20px 0 !important;
+  color: #121619;
+  border-radius: 0px 15px 15px 0px;
 }
 
 footer {
