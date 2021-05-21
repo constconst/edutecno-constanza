@@ -24,10 +24,20 @@
     bottom: 40px;
     position: absolute;
     border: 0;
-    background-color: transparent;
+    background-color: $white;
     transform: rotate(90deg);
     padding: 0;
     & a {
         margin-left: -22px;
+    }
+    @include breakpoint(laptop) {
+        position: absolute;
+        right: 59%;
+        font-size: $x-large;
+        bottom: 60px;
+        & a {
+            margin-left: 0;
+            padding: 10px;
+        }
     }
 }
