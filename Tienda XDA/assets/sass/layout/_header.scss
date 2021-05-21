@@ -1,0 +1,56 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    background-color: $smoky-black;
+    color: $white;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: $large;
+}
+
+.fa-bars {
+    font-size: $x-large;
+}
+
+.navbar--mobile {
+    margin-right: $container-margin;
+    pointer: cursor;
+    @include breakpoint(phablet) {
+        display: none;
+    }
+}
+
+.navbar {
+    display: none;
+    &_list {
+        display: flex;
+        flex-direction: row;
+    }
+    &_item {
+        list-style-type: none;
+        margin-right: $container-margin;
+    }
+    @include breakpoint(phablet) {
+        display: block;
+    }
+}

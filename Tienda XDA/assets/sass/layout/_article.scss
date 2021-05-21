@@ -1,0 +1,33 @@
+.newsletter-article {
+    background-color: $smoky-black;
+    padding: $container-margin;
+    color: $white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    @include breakpoint(phablet) {
+        width: 95%;
+    }
+    @include breakpoint(laptop) {
+        width: 36%;
+        height: 25%;
+    }
+}
+
+.newsletter-article_text {
+    font-size: $x-small;
+}
+
+.button-secondary {
+    right: 0;
+    bottom: 40px;
+    position: absolute;
+    border: 0;
+    background-color: transparent;
+    transform: rotate(90deg);
+    padding: 0;
+    & a {
+        margin-left: -22px;
+    }
+}

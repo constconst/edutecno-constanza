@@ -1,0 +1,44 @@
+.image-section {
+    margin-top: 60px;
+    height: 35vh;
+    background-image: url('../images/imagen1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include breakpoint(tablet) {
+        height: calc(100vh - 60px);
+    }
+    @include breakpoint(laptop) {
+        width: 60%;
+        height: 95vh;
+        margin-top: 0px;
+        position: fixed;
+        right: 0;
+    }
+}
+
+.description-section {
+    margin: 35px $container-margin;
+    @include breakpoint(phablet) {
+        margin: 35px 10%;
+    }
+    @include breakpoint(laptop) {
+        padding: 5%;
+        margin: 5% 0;
+        max-width: 600px;
+    }
+    &_title {
+        font-size: $xx-large;
+        text-transform: uppercase;
+        @include breakpoint(phablet) {
+            font-size: $xxx-large;
+        }
+    }
+    &_text {
+        font-size: $small;
+        color: $granite-gray;
+        line-height: 1.5;
+        @include breakpoint(phablet) {
+            font-size: $x-large;
+        }
+    }
+}
