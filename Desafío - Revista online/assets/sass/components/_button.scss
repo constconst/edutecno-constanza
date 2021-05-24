@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.button-primary {
+    width: 100px;
+    border: 1px solid $smoky-black;
+    font-size: $medium;
+    font-family: $main-font;
+    padding: 10px 10px;
+    background-color: $white;
+    margin-top: 10px;
+    color: $smoky-black;
+    &:hover {
+        border: 1px solid $quick-silver;
+        color: $quick-silver;
+    }
+    &:hover a {
+        color: $quick-silver;
+    }
+}
