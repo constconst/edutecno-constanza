@@ -1,18 +1,36 @@
-header.header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid gray;
     margin-bottom: 30px;
+    padding: 20px 20px;
+    &__logo {
+        text-transform: uppercase;
+    }
+    &__mobile-nav {
+        @include breakpoint(small) {
+            display: none;
+        }
+    }
 }
 
 .header__nav {
-    padding: 10px;
-    &__list {
-        display: flex;
-        top: 0;
-        & li {
-            margin-left: 10px;
+    display: none;
+    @include breakpoint(small) {
+        padding: 10px;
+        display: block;
+        &__list {
+            display: flex;
+            top: 0;
+            & li {
+                margin-left: 10px;
+            }
         }
     }
+}
+
+.header__nav__list input {
+    border-radius: 30px;
+    padding: 3px;
 }

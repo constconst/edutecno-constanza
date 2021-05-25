@@ -1,6 +1,34 @@
 @media only screen and (min-width: 992px) {
     .aside-section {
-        margin-left: 2rem;
+        margin-left: 3rem;
+    }
+}
+
+.aside-section h3 {
+    margin-bottom: 10px;
+}
+
+.aside-section__about-us,
+.aside-section__tags {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $granite-gray;
+}
+
+.aside-section__tags {
+    & ul {
+        padding: 0;
+        @include breakpoint(medium) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        & li {
+            padding: 2px 4px;
+            background-color: pink;
+            margin-right: 2px;
+            margin-bottom: 2px;
+            color: white;
+        }
     }
 }
 

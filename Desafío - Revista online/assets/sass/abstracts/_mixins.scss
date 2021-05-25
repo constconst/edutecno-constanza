@@ -12,28 +12,28 @@ BREAKPOINTS
 *********************/
 
 @mixin breakpoint($point) {
-    @if $point==desktop {
-        @media (min-width: 70em) {
+    @if $point==x-large {
+        @media (min-width: 1400px) {
             @content ;
         }
     }
-    @else if $point==laptop {
-        @media (min-width: 64em) {
+    @else if $point==large {
+        @media (min-width: 1200px) {
             @content ;
         }
     }
-    @else if $point==tablet {
-        @media (min-width: 50em) {
+    @else if $point==medium {
+        @media (min-width: 992px) {
             @content ;
         }
     }
-    @else if $point==phablet {
-        @media (min-width: 37.5em) {
+    @else if $point==small {
+        @media (min-width: 768px) {
             @content ;
         }
     }
-    @else if $point==mobileonly {
-        @media (max-width: 37.5em) {
+    @else if $point==x-small {
+        @media (max-width: 767px) {
             @content ;
         }
     }

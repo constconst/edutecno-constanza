@@ -1,7 +1,21 @@
+.main-section {
+    margin-bottom: 5%;
+}
+
 .element__body__img {
     width: 100%;
 }
 
 .news-section__element {
     margin-bottom: 30px;
+}
+
+.element__heading {
+    margin-bottom: 20px;
+}
+
+.element__body {
+    & p {
+        margin-top: 10px;
+    }
 }

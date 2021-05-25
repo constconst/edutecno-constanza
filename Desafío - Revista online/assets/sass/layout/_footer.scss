@@ -1,0 +1,24 @@
+.footer {
+    text-align: center;
+    &__newsletter {
+        background-color: $isabelline;
+        padding: 5%;
+        &__heading,
+        &__body {
+            margin-bottom: 15px;
+        }
+        &__button button,
+        &__button input {
+            border-width: 0;
+            font-size: 13px;
+            padding: 10px 40px;
+        }
+        &__button button {
+            background-color: pink;
+            color: white;
+        }
+    }
+    &__rights {
+        padding: 20px;
+    }
+}
