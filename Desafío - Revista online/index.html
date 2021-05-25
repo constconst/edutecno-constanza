@@ -9,18 +9,28 @@
     <!-- Fuente Space mono -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Íconos -->
+    <script src="https://kit.fontawesome.com/ced3128bfd.js" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Modernizr -->
+    <script src="assets/js/modernizr-custom.js"></script>
+
 </head>
 
 <body>
-    <header class="header container">
-        <h1 class="header__logo">Diario</h1>
+    <header class="container header">
+        <h1 class="header__logo">Diario <i class="fas fa-meteor"></i>
+        </h1>
         <nav class="header__nav">
             <ul class="header__nav__list">
                 <li><a href="">Nosotros</a></li>
                 <li><a href="">Contacto</a></li>
-                <li><input class="input-menu" type="text" name="buscar" placeholder="buscar..." /></li>
+                <li><input type="text" name="buscar" placeholder="buscar..." /></li>
             </ul>
+        </nav>
+        <nav class="header__mobile-nav">
+            <a href=""><i class="fas fa-plus"></i></a>
         </nav>
     </header>
     <main class="container main-section">
@@ -117,7 +127,7 @@
                     </p>
                 </div>
                 <div class="aside-section__tags">
-                    <h3>Tags </h3>
+                    <h3>Tags</h3>
                     <ul>
                         <li>Viajes</li>
                         <li>Noticias</li>
@@ -142,15 +152,17 @@
 
         </div>
     </main>
-    <article class="container newsletter">
-        <h2 class="newsletter__heading">Lorem ipsum dolor sit amet</h2>
-        <p class="newsletter__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-        <div class="newsletter__button">
-            <input type="text" name=""><button>Suscríbete</button>
+    <footer class="footer">
+        <article class="footer__newsletter">
+            <h2 class="footer__newsletter__heading">Lorem ipsum dolor sit amet</h2>
+            <p class="footer__newsletter__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            <div class="footer__newsletter__button">
+                <input type="text" name=""><button>Suscríbete</button>
+            </div>
+        </article>
+        <div class="footer__rights">
+            <p>Todos los derechos reservados</p>
         </div>
-    </article>
-    <footer class="container footer">
-        <p>Todos los derechos reservados</p>
     </footer>
 </body>
 
