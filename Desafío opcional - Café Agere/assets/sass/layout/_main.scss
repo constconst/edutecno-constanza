@@ -1,0 +1,13 @@
+.main {
+    position: relative;
+    & hgroup {
+        position: absolute;
+        right: 100px;
+        top: 0;
+    }
+    &__information {
+        z-index: 1;
+        background-color: $white;
+        position: fixed;
+    }
+}
