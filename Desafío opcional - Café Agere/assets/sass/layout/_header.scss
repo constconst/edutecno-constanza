@@ -1,3 +1,33 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+.header {
+    width: 90vw;
+    display: block;
+    margin: 0 auto;
+    padding: 40px 0;
+    height: 120px;
+    position: relative;
+    &_wrapper-left {
+        position: absolute;
+        left: 0;
+        & figure {
+            display: inline;
+        }
+        & img {
+            max-width: 30px;
+            margin-right: 30px;
+            display: inline;
+        }
+    }
+    &_nav {
+        display: inline;
+        & a:nth-child(2) {
+            margin-left: 25px;
+        }
+    }
+    &_wrapper-right {
+        position: absolute;
+        right: 0;
+    }
+}

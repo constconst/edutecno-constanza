@@ -500,6 +500,46 @@ h1 {
   }
 }
 
+input.toggle-check-btn {
+  opacity: 0;
+}
+
+.toggle-btn {
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+}
+
+.icon-link {
+  font-size: 12px;
+  transform: translateX(80px);
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  color: transparent;
+  text-decoration: none;
+  transition: all cubic-bezier(0.77, 0, 0.18, 1) 0.5s;
+}
+
+.toggle-check-btn:checked ~ .toggle-btn {
+  color: blue;
+  transition: all cubic-bezier(0.77, 0, 0.18, 1) 0.5s;
+}
+
+.toggle-check-btn:checked ~ .icon-link {
+  margin-right: 6px;
+  color: #0C0910;
+  top: 0;
+}
+
+.toggle-check-btn:checked ~ .icon-link:nth-child(5) {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 356px) {
+  .icon-link {
+    font-size: 10px;
+  }
+}
 .image-section {
   margin-top: 60px;
   height: 35vh;
