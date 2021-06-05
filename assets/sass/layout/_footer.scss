@@ -1,0 +1,26 @@
+.footer {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    & a {
+        padding-left: 10px;
+    }
+    & .footer__links a:nth-child(1)::after {
+        content: "  |";
+    }
+    &__wrapper {
+        align-items: center;
+    }
+    & .small-text {
+        font-size: $small;
+    }
+    & .form {
+        display: flex;
+        flex-direction: column;
+        & input {
+            margin-bottom: 10px;
+        }
+        @include breakpoint(small) {
+            display: block;
+        }
+    }
+}
