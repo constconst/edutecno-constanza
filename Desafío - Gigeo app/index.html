@@ -16,27 +16,64 @@
 </head>
 
 <body>
-    <header>
-        <img src="assets/img/gigeo.png" alt="" class="navbar_logo">
-        <nav class="navbar">
+    <header class="header">
+        <img src="assets/img/gigeo.png" alt="" class="header__logo">
+        <nav class="header__navbar">
             <a href=""><i class="fas fa-search"></i></a>
             <a href=""><i class="fas fa-video"></i></a>
             <a href=""><i class="fas fa-plus"></i></a>
             <a href=""><i class="fas fa-bell"></i></a>
             <a href=""><i class="fas fa-hamburger"></i></a>
         </nav>
-    </header>
-    <section class="user-section container">
-        <img src="assets/img/image-banner.png" alt="" class="user-section_img img-fluid">
-        <div class="user-section_wrapper row">
-            <div class="user-section_detail">
-                <img src="assets/img/profile-image.png" alt="" class="user-section_profile-img">
-                <h3>Yuki Mukami</h3>
-                <p>30.000 seguidores</p>
+        <nav class="circle-menu-nav">
+            <div class="menu-area">
+                <input type="checkbox" class="toggle-check-btn">
+                <label class="toggle-btn">
+                <span class="line-one"></span>
+                <span class="line-two"></span>
+                <span class="line-three"></span>
+              </label>
+
+                <a href="#" class="icon-link link-1">
+                    <i class="fa fa-home"></i>
+                </a>
+                <a href="#" class="icon-link link-2">
+                    <i class="fa fa-phone"></i>
+                </a>
+                <a href="#" class="icon-link link-3">
+                    <i class="fa fa-cog"></i>
+                </a>
+                <a href="#" class="icon-link link-4">
+                    <i class="fa fa-calendar"></i>
+                </a>
+                <a href="#" class="icon-link link-5">
+                    <i class="fa fa-globe"></i>
+                </a>
+                <a href="#" class="icon-link link-6">
+                    <i class="fa fa-user"></i>
+                </a>
+                <a href="#" class="icon-link link-7">
+                    <i class="fa fa-envelope"></i>
+                </a>
+                <a href="#" class="icon-link link-8">
+                    <i class="fa fa-search"></i>
+                </a>
             </div>
-            <div class="user-section_buttons">
-                <button class="button-primary">Mensaje</button>
-                <button class="button-secondary">Seguir</button>
+        </nav>
+    </header>
+    <section class="user-section">
+        <div class="user-section_img"></div>
+        <div class="user-section_wrapper container">
+            <div class="row justify-content-center">
+                <div class="user-section_detail">
+                    <img src="assets/img/profile-image.png" alt="" class="user-section__profile-img">
+                    <h3>Yuki Mukami</h3>
+                    <p>30.000 seguidores</p>
+                </div>
+                <div class="user-section_buttons d-none d-md-flex">
+                    <button class="button-primary">Mensaje</button>
+                    <button class="button-secondary">Seguir</button>
+                </div>
             </div>
         </div>
         <hr>
@@ -65,9 +102,7 @@
                 <img src="assets/img/image-4.png" alt="" class="img-fluid">
                 <h4>Título</h4>
                 <p>16k vistas - 1 semana atrás</p>
-
             </div>
-
         </div>
         <div class="row">
             <div class="col-12 col-md-3">
