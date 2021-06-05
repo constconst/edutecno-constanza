@@ -6,8 +6,11 @@
  * Set up a decent box model on the root element
  */
 
-html {
+html,
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -24,11 +27,29 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    font-family: nth($text-font-stack, 1);
-}
-
 
 /**
  * Basic styles for links
  */
+
+body {
+    color: $red;
+}
+
+a {
+    text-decoration: none;
+    color: $red;
+    &:hover {
+        background-color: $mona-lisa;
+    }
+}
+
+li {
+    list-style-type: circle;
+}
+
+.wrapper {
+    border: 1px solid $red;
+    border-radius: 1rem;
+    padding: 40px;
+}
