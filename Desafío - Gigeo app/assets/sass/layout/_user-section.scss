@@ -1,5 +1,8 @@
 .user-section {
     text-align: center;
+    & .row {
+        align-items: center;
+    }
     &_img {
         height: 200px;
         width: 100vw;
@@ -16,5 +19,25 @@
         width: 100px;
         height: 100px;
         border-radius: 50%;
+    }
+    &_detail {
+        margin-top: 30px;
+        width: 100%;
+        @include breakpoint(medium) {
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        & div {
+            @include breakpoint(small) {
+                margin-left: 20px;
+            }
+        }
+    }
+    &_wrapper .row {
+        @include breakpoint(small) {
+            justify-content: space-between;
+        }
     }
 }

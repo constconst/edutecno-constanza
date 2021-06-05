@@ -7,9 +7,12 @@
     top: 0;
     left: 0;
     background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    & .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+    }
     width: 100%;
     z-index: 2;
     &__logo {
@@ -60,7 +63,6 @@
 }
 
 .toggle-btn {
-    background-color: #f76c6c;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -68,144 +70,9 @@
     padding: 25px;
     cursor: pointer;
     z-index: 5;
-    box-shadow: inset 0px 0 8px -2px #02020299;
     transition: all cubic-bezier(.25, .46, .45, .94) 0.5s;
 }
 
-.toggle-btn>span {
-    display: block;
-    height: 2px;
-    width: 20px;
-    background-color: #ffffff;
-    position: absolute;
-    -webkit-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    transition: all ease 0.3s;
-}
-
-.toggle-btn>span.line-one {
-    top: 15px;
-    left: 50%;
-    margin-left: -10px;
-}
-
-.toggle-btn>span.line-two {
-    top: 50%;
-    left: 50%;
-    margin-top: -1px;
-    margin-left: -10px;
-}
-
-.toggle-btn>span.line-three {
-    bottom: 15px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-}
-
 .toggle-check-btn:checked~.toggle-btn {
-    background-color: #000000;
-    border-radius: 50px;
-}
-
-.icon-link {
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    text-align: center;
-    color: #ffffff;
-    text-decoration: none;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all cubic-bezier(.77, 0, .18, 1) 0.5s;
-}
-
-.icon-link>i.fa {
-    background-color: #238ae6;
-    border-radius: 50px;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    transition: all ease-in-out 0.2s;
-}
-
-.icon-link>i.fa:hover {
-    transform: scale(1.5);
-}
-
-.toggle-check-btn:checked~.link-1 {
-    transform: translate(-50%, 0);
-    top: 0;
-}
-
-.toggle-check-btn:checked~.link-2 {
-    transform: translate(0, 0);
-    left: 12.5%;
-    top: 12.5%;
-}
-
-.toggle-check-btn:checked~.link-3 {
-    transform: translate(-100%, 0);
-    right: 12.5%;
-    top: 12.5%;
-    left: 88.5%;
-}
-
-.toggle-check-btn:checked~.link-4 {
-    left: 12.5%;
-}
-
-.toggle-check-btn:checked~.link-5 {
-    left: 100%;
-    transform: translate(-100%, -50%);
-}
-
-.toggle-check-btn:checked~.link-6 {
-    transform: translate(-50%, -100%);
-    top: 100%;
-}
-
-.toggle-check-btn:checked~.link-7 {
-    transform: translate(0, -100%);
-    left: 12.5%;
-    top: 88.5%;
-}
-
-.toggle-check-btn:checked~.link-8 {
-    transform: translate(-100%, -100%);
-    left: 88.5%;
-    top: 88.5%;
-}
-
-.toggle-check-btn:checked {
-    width: 40px;
-    height: 40px;
-}
-
-.toggle-check-btn:checked~.toggle-btn>span.line-two {
-    left: 0;
-    right: 0;
-    width: 0px;
-    margin: 0 auto;
-}
-
-.toggle-check-btn:checked~.toggle-btn>span.line-one {
-    transform: rotate(-135deg);
-    top: 50%;
-}
-
-.toggle-check-btn:checked~.toggle-btn>span.line-three {
-    transform: rotate(135deg);
-    top: 50%;
-}
-
-.toggle-check-btn:checked~.toggle-btn {
-    padding: 20px;
-}
-
-.toggle-check-btn:hover~.toggle-btn {
-    transform: translate(-50%, -50%) rotate(90deg);
-    border-radius: 50px;
+    color: blue;
 }

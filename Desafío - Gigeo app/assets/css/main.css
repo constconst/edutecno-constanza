@@ -10307,11 +10307,14 @@ body {
   top: 0;
   left: 0;
   background-color: white;
+  width: 100%;
+  z-index: 2;
+}
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  z-index: 2;
+  padding-top: 20px;
 }
 .header__logo {
   width: auto;
@@ -10364,7 +10367,6 @@ body {
 }
 
 .toggle-btn {
-  background-color: #f76c6c;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -10372,150 +10374,18 @@ body {
   padding: 25px;
   cursor: pointer;
   z-index: 5;
-  box-shadow: inset 0px 0 8px -2px #02020299;
   transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
 }
 
-.toggle-btn > span {
-  display: block;
-  height: 2px;
-  width: 20px;
-  background-color: #ffffff;
-  position: absolute;
-  -webkit-transition: all ease 0.3s;
-  -o-transition: all ease 0.3s;
-  transition: all ease 0.3s;
-}
-
-.toggle-btn > span.line-one {
-  top: 15px;
-  left: 50%;
-  margin-left: -10px;
-}
-
-.toggle-btn > span.line-two {
-  top: 50%;
-  left: 50%;
-  margin-top: -1px;
-  margin-left: -10px;
-}
-
-.toggle-btn > span.line-three {
-  bottom: 15px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-
 .toggle-check-btn:checked ~ .toggle-btn {
-  background-color: #000000;
-  border-radius: 50px;
-}
-
-.icon-link {
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  text-align: center;
-  color: #ffffff;
-  text-decoration: none;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: all cubic-bezier(0.77, 0, 0.18, 1) 0.5s;
-}
-
-.icon-link > i.fa {
-  background-color: #238ae6;
-  border-radius: 50px;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  transition: all ease-in-out 0.2s;
-}
-
-.icon-link > i.fa:hover {
-  transform: scale(1.5);
-}
-
-.toggle-check-btn:checked ~ .link-1 {
-  transform: translate(-50%, 0);
-  top: 0;
-}
-
-.toggle-check-btn:checked ~ .link-2 {
-  transform: translate(0, 0);
-  left: 12.5%;
-  top: 12.5%;
-}
-
-.toggle-check-btn:checked ~ .link-3 {
-  transform: translate(-100%, 0);
-  right: 12.5%;
-  top: 12.5%;
-  left: 88.5%;
-}
-
-.toggle-check-btn:checked ~ .link-4 {
-  left: 12.5%;
-}
-
-.toggle-check-btn:checked ~ .link-5 {
-  left: 100%;
-  transform: translate(-100%, -50%);
-}
-
-.toggle-check-btn:checked ~ .link-6 {
-  transform: translate(-50%, -100%);
-  top: 100%;
-}
-
-.toggle-check-btn:checked ~ .link-7 {
-  transform: translate(0, -100%);
-  left: 12.5%;
-  top: 88.5%;
-}
-
-.toggle-check-btn:checked ~ .link-8 {
-  transform: translate(-100%, -100%);
-  left: 88.5%;
-  top: 88.5%;
-}
-
-.toggle-check-btn:checked {
-  width: 40px;
-  height: 40px;
-}
-
-.toggle-check-btn:checked ~ .toggle-btn > span.line-two {
-  left: 0;
-  right: 0;
-  width: 0px;
-  margin: 0 auto;
-}
-
-.toggle-check-btn:checked ~ .toggle-btn > span.line-one {
-  transform: rotate(-135deg);
-  top: 50%;
-}
-
-.toggle-check-btn:checked ~ .toggle-btn > span.line-three {
-  transform: rotate(135deg);
-  top: 50%;
-}
-
-.toggle-check-btn:checked ~ .toggle-btn {
-  padding: 20px;
-}
-
-.toggle-check-btn:hover ~ .toggle-btn {
-  transform: translate(-50%, -50%) rotate(90deg);
-  border-radius: 50px;
+  color: blue;
 }
 
 .user-section {
   text-align: center;
+}
+.user-section .row {
+  align-items: center;
 }
 .user-section_img {
   height: 200px;
@@ -10535,6 +10405,51 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+.user-section_detail {
+  margin-top: 30px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .user-section_detail {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (min-width: 576px) {
+  .user-section_detail div {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 576px) {
+  .user-section_wrapper .row {
+    justify-content: space-between;
+  }
+}
+
+.video-section h4 {
+  font-weight: 600;
+  margin-top: 20px;
+}
+.video-section p {
+  font-size: 14px;
+  color: #999999;
+}
+
+.button-primary {
+  padding: 10px 20px;
+  background-color: #92dce5;
+  border: 0;
+  color: white;
+}
+
+.button-secondary {
+  padding: 10px 20px;
+  background-color: #ef6461;
+  border: 0;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

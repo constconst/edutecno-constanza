@@ -1,0 +1,10 @@
+.video-section {
+    & h4 {
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    & p {
+        font-size: 14px;
+        color: $mid-grey;
+    }
+}

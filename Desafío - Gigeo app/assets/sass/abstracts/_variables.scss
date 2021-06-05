@@ -2,6 +2,9 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 /// Regular font family
+//Colores
+$morning-glory: #92dce5;
+$sunset-glory: #ef6461;
 /// @type List
 $text-font-stack: 'Montserrat',
 'Helvetica Neue Light',
@@ -11,13 +14,13 @@ $text-font-stack: 'Montserrat',
 sans-serif !default;
 /// Copy text color
 /// @type Color
-$text-color: rgb(34, 34, 34) !default;
+$text-color: rgb(34, 34, 34);
 /// Light grey
 /// @type Color
-$light-grey: rgb(237, 237, 237) !default;
+$light-grey: rgb(237, 237, 237);
 /// Medium grey
 /// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
+$mid-grey: rgb(153, 153, 153);
 /// Dark grey
 /// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
+$dark-grey: rgb(68, 68, 68);

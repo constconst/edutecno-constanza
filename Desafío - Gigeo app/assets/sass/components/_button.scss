@@ -1,3 +1,16 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.button-primary {
+    padding: 10px 20px;
+    background-color: $morning-glory;
+    border: 0;
+    color: white;
+}
+
+.button-secondary {
+    padding: 10px 20px;
+    background-color: $sunset-glory;
+    border: 0;
+    color: white;
+}
