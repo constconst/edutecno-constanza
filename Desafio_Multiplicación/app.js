@@ -7,7 +7,6 @@ if (numeroUser >= 0 && numeroUser <= 20) {
 } else {
     alert(`Too bad amigue, tienes que escoger un número válido. ${numeroUser} no está dentro del rango.`)
     location.reload();
-
 }
 
 // Hacer un ciclo for para hacer la tabla
