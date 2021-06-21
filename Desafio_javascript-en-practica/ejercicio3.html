@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Ejercicio 3</title>
+    <title>Ejercicio #3</title>
 </head>
 
 <body>
     <div>
         <div>
             <h2>
-                Resultado: <span class="resultado"></span>
+                Resultado: <span id="resultado"></span>
             </h2>
             <div>
                 <div>
@@ -35,7 +35,33 @@
         </div>
     </div>
     <script>
-    // Escríbe aquí tu código
+        // Escríbe aquí tu código
+        // regex que solo acepte números
+        var pattern = /^[0-9]+$/gm;
+        // guardar valores a recibir en variables
+
+        var sumar = document.getElementById('btn-sumar')
+        var restar = document.getElementById('btn-restar')
+        var resultado = document.getElementById('resultado')
+
+        sumar.addEventListener('click', (event) => {
+            var valor1 = document.getElementById('valor1').value
+            var valor2 = document.getElementById('valor2').value
+            if (valor1.match(pattern) && valor2.match(pattern)) {
+                valor1 = parseInt(valor1)
+                valor2 = parseInt(valor2)
+                resultado.innerHTML = `<p>${valor1} + ${valor2} =  ♥︎ ${valor1 + valor2}</p>`
+            }
+        })
+        restar.addEventListener('click', (event) => {
+            var valor1 = document.getElementById('valor1').value
+            var valor2 = document.getElementById('valor2').value
+            if (valor1.match(pattern) && valor2.match(pattern)) {
+                valor1 = parseInt(valor1)
+                valor2 = parseInt(valor2)
+                resultado.innerHTML = `<p>${valor1} - ${valor2} = ${Math.abs(valor1 - valor2)}</p>`
+            }
+        })
     </script>
 </body>
 

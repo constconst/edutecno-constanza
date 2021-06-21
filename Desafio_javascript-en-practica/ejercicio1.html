@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Ejercicio 1</title>
+    <title>Ejercicio #1</title>
 </head>
 
 <body>
@@ -20,6 +20,7 @@
                         <label>
                             Nombre completo
                         </label>
+                        <!-- NOMBRE -->
                         <input id="nombre" type="text">
                         <p class="errorNombre" style="color:red;font-style: italic;"></p>
                     </div>
@@ -27,11 +28,13 @@
                         <label>
                             Asunto
                         </label>
+                        <!-- ASUNTO -->
                         <input id="asunto" type="text">
                         <p class="errorAsunto" style="color:red;font-style: italic;"></p>
                     </div>
                 </div>
                 <div style="display: flex;flex-direction: column;">
+                    <!-- MENSAJE -->
                     <label>
                         Mensaje
                     </label>
@@ -39,7 +42,7 @@
                     <p class="errorMensaje" style="color:red;font-style: italic;"></p>
                 </div>
                 <div>
-                    <button id="botton" type="submit">
+                    <button id="button" type="submit">
                         Envíar mensaje
                     </button>
                 </div>
@@ -47,7 +50,54 @@
         </div>
     </div>
     <script>
-    // Escríbe aquí tu código
+        // Escríbe aquí tu código
+        // acceder al input nombre y guardarlo en una variable
+        var form = document.getElementById('formulario')
+        form.addEventListener('submit', (event) => {
+            event.preventDefault()
+            var pattern = /[a-zA-Z]/gim
+            var patternEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+
+            var textName = document.getElementById('nombre')
+            var textAsunto = document.getElementById('asunto')
+            var textMensaje = document.getElementById('mensaje')
+            var textoIngresado = textName.value
+            var textoIngresado1 = textAsunto.value
+            var textoIngresado2 = textMensaje.value
+
+            // 1. validar todas las cosas 
+            // 2. preguntar si está todo bien para mandar las cosas
+            // 3. si valido algo que estaba malo y está bueno, debería poder quitarle el error.
+            var error = 0
+
+            if (textoIngresado.match(pattern) && textName.type !== '') {
+                document.querySelector(".errorNombre").innerHTML = ''
+            } else {
+                // si el error pasa por aquí, va a ser igual a 1
+                error++
+                document.querySelector(".errorNombre").innerHTML = "☝︎ Tienes que escribir tu nombre"
+            }
+            if (textoIngresado1.match(pattern) && textAsunto.type !== "") {
+                document.querySelector(".errorAsunto").innerHTML = ''
+            } else {
+                error++
+                document.querySelector(".errorAsunto").innerHTML = "☝︎ Tienes que escribir un asunto"
+            }
+            if (textoIngresado2.match(pattern) && textAsunto.type !== "") {
+                document.querySelector(".errorMensaje").innerHTML = ''
+            } else {
+                error++
+                document.querySelector(".errorMensaje").innerHTML = "☝︎ Tienes que escribir un mensaje"
+            }
+
+            if (error == 0) {
+                form.submit()
+            } else {
+                return false
+            }
+
+        })
     </script>
 </body>
 
