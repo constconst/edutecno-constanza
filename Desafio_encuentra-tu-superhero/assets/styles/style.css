@@ -1,0 +1,14 @@
+body {
+    background-color: #e75623;
+}
+
+.jumbotron {
+    margin: 0 auto;
+}
+
+.logo-img {
+    max-width: 800px;
+    text-align: center;
+    margin: 40px auto;
+    display: block;
+}

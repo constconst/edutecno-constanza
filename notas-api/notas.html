@@ -1,0 +1,77 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <h2>El valor de la UF hoy es de
+            <span id="valorUf"></span>
+        </h2>
+    </div>
+    <script src="https://code.jQuery.com/jQuery-2.1.1.min.js"></script>
+    <script>
+        $('#valorUF').text('loading . . .');
+        $(document).ready(function() {
+            $.ajax({
+                type: "GET",
+                url: "https://pokeapi.co/api/v2/pokemon/ditto",
+                success: function(data) {
+                    $('#valorUf').text(JSON.stringify(data.abilities));
+                },
+                dataType: 'json',
+            });
+        });
+    </script>
+
+
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <button type=" button ">Mostrar Información</button>
+        <div class="resultado"></div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('button').on('click', function() {
+                $.ajax({
+                    type: "GET",
+                    url: " https://reqres.in/api/users ",
+                    dataType: "json",
+                    success: function(datosAPI) {
+                        console.log(datosAPI.data)
+                        datosAPI.data.forEach(element => {
+                            $('.resultado')
+                                .append(`<p>${element.id} - ${element.email} - ${element.first_name} - ${element.last_name} - <img src="${element.avatar}"></p>`)
+                        })
+                    },
+                    error: function(error) {
+                        //si todo sale bien, se agrega la funcionalidad aqu .
+                    },
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
