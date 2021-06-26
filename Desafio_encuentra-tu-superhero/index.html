@@ -36,32 +36,36 @@
 </head>
 
 <body class="nes-pointer">
-    <iframe width="0%" height="0" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/531584409&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+    <header class="header ">
+        <i class="nes-pokeball logo-img"></i>
+    </header>
 
-    <div class="container">
-        <img src="assets/img/pokemonlogo.png" alt="" class="img-fluid logo-img">
-    </div>
-    <section class="container">
+    <section class="container main">
         <section class="message-list">
             <section class="message-left">
                 <!-- Balloon -->
 
                 <div class="nes-balloon from-left">
-                    <p>Hola, este es un buscador de pokemones o Pokédex. Hasta la fecha, hay 890 pokemones.</p>
+                    <p>Hola, soy Ash Ketchum y esta es una Pokédex. Puedes buscar los pokemones que hay hasta la fecha, son 890.</p>
+                    <p>Música ambiental: <iframe width="10%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/531584409&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"></iframe>
+                    </p>
+
+
                 </div>
                 <i class="nes-ash"></i>
 
             </section>
         </section>
     </section>
+
     <div class="spacer"></div>
     <section class="form container">
         <div>
             <h1>Pokédex</h1>
 
-            <label for="search">Ingresa el número del Pokémon a buscar</label>
+            <label for="search">Ingresa el número del Pokémon</label>
             <div class="d-flex">
-                <input id="pokemon-number" type="text" name="search" placeholder="Escribe el número aquí" class="nes-input">
+                <input id="pokemon-number" type="text" name="search" placeholder="" class="nes-input">
                 <button id="pokemon-button" type="button" class="nes-btn is-primary" type="submit">Buscar</button>
             </div>
         </div>
@@ -72,11 +76,12 @@
     <div class="spacer"></div>
 
     <section class="result container nes-container is-rounded">
+
         <div>
             <div class="pokemon">
                 <div>
-                    <i class="nes-pokeball"></i>
-                    <h2>Resultado: <span id="poke-name"></span></h2>
+
+                    <h2>POKEMON: <span id="poke-name"></span></h2>
 
                     <div id="poke-image" class="nes-container is-rounded">
 
@@ -112,7 +117,8 @@
         </div>
     </section>
     <section class="chart container nes-container is-rounded is-dark">
-        <img src="assets/img/lapras.gif" alt="">
+        <h2>STATS</h2>
+
     </section>
 
     <script src="assets/js/script.js"></script>

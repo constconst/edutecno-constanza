@@ -34,7 +34,9 @@ $(function() {
                 },
             });
         } else {
-            console.log('debes escoger un número igual o menor a 1118')
+            $('#poke-name').text('ERROR, inténtalo de nuevo.');
+            $('#poke-image')
+                .append(`<img src="assets/img/lapras.gif" style="width:100%;">`)
         }
 
     });
