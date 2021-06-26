@@ -4,8 +4,10 @@ body {
     font-family: 'Press Start 2P', mono;
 }
 
-.jumbotron {
-    margin: 0 auto;
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .container {
@@ -18,11 +20,15 @@ body>section.chart.container.nes-container.is-rounded {
     margin: 30px auto;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 .logo-img {
-    max-width: 700px;
-    text-align: center;
-    margin: 40px auto;
-    display: block;
+    max-width: 100px;
+    margin: 20px;
 }
 
 .d-flex {

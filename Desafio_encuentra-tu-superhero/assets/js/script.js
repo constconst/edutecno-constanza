@@ -27,10 +27,51 @@ $(function() {
                         <img src="${pokemon.sprites['front_shiny']}" class="pokemon-pixel">`)
 
 
+                    // Hermoso gráfico
+                    var data = [];
+                    var i = 0;
+                    $.each(pokemon.abilities, (index, value) => {
+                        console.log('poderes ' + index + '-' + value);
+
+
+                        data.push({
+                            y: value,
+                            label: index
+                        });
+
+
+                        i++;
+
+
+                    });
+
+                    console.log(data);
+                    window.onload = function() {
+                        var chart = new CanvasJS.Chart("chartContainer", {
+                            theme: "light2",
+                            title: {
+                                text: "Gaming Consoles Sold in 2012"
+                            },
+                            data: [{
+                                type: "pie",
+                                startAngle: 240,
+                                yValueFormatString: "##0.00\"%\"",
+                                indexLabel: "{label} {y}",
+                                dataPoints: data
+                            }]
+                        });
+                        chart.render();
+
+                        $("#chart").CanvasJSChart(options);
+                    }
+
+
+
+
 
                 },
                 error: function(error) {
-                    alert('chingados')
+                    alert('diablos')
                 },
             });
         } else {
