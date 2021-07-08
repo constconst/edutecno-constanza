@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando con Vue JS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">;)</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">JavaScript</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h2>Tabla de usuarios</h2>
+        <table class="striped">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>RUN</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Edad</th>
+
+                </tr>
+            </thead>
+
+            <tbody id="app">
+                <tr v-for="user in users">
+                    <td>{{user.name}}</td>
+                    <td>{{user.surname}}</td>
+                    <td>{{user.run}}</td>
+                    <td>{{user.birthday}}</td>
+                    <td>{{user.age}}</td>
+
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        // crear la instancia principal
+        // vue js will apply to this portion
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+
+                users: [{
+                    name: '🐶 Bruma',
+                    surname: 'Tezuka Barrios',
+                    run: '23920',
+                    birthday: '00/00/00',
+                    age: 6,
+                }, {
+                    name: '🦛 Helga',
+                    surname: 'Pataki Jiménez',
+                    run: '23928',
+                    birthday: '05/03/2010',
+                    age: 10,
+                }, {
+                    name: '🐱 Penny',
+                    surname: 'Lane Flores',
+                    run: '329823',
+                    birthday: '05/03/2013',
+                    age: 7,
+                }]
+            }
+        })
+    </script>
+
+</body>
+
+</html>

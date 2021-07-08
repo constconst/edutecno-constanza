@@ -1,0 +1,16 @@
+// Una forma de llamar Vue es:
+<body>
+    <div id="app"> 
+    {{ message }} 
+    </div> 
+ </body>
+
+js
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hola Desaf o Latam!!!'
+        }
+    }); 
+</script>
