@@ -25,7 +25,6 @@
 
     <div id="app">
         <hola></hola>
-
         <div v-for="character in characters" class="characters">
             {{character.name}}
             <img :src="character.image" alt="" style="height:80px; width:80px">
@@ -36,6 +35,21 @@
         Vue.component('hola', {
             template: '<h1>Personajes</h1>'
         })
+
+        // Vue.component('rickandmorty', {
+        //     template: '<div v-for="character in characters" class="characters"> {{character.name}} <img :src="character.image" alt="">',
+        //     data() {
+        //         return {
+        //             characters: []
+        //         }
+        //     },
+        //     mounted() {
+        //         // Simple GET request using fetch
+        //         fetch("https://rickandmortyapi.com/api/character/")
+        //             .then(response => response.json())
+        //             .then(data => (this.characters = data.results));
+        //     }
+        // })
 
         var app = new Vue({
             el: '#app',
