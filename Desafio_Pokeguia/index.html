@@ -1,34 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Vue Mastery</title>
-    <!-- Import Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-    <!-- Import Vue.js -->
-    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+    <title>Desafío componentes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src="https://unpkg.com/vue"></script>
 </head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+</style>
 
 <body>
+
     <div id="app">
-        <div class="nav-bar"></div>
+        <div class="columns">
+            <div class="column">
+                <hola></hola>
+            </div>
+            <div class="column">
 
-        <div class="cart">Cart({{ cart }})</div>
+                <input v-model="search" value="Pikachu" id="first_name2" type="text" class="input is-warning" v-on:keyup.enter="searchData">
+            </div>
+            <div class="column">
+                <button class="button is-warning is-rounded" v-on:click="searchData">
+              Buscar
+            </button>
+            </div>
+        </div>
 
+        <div v-for="pokemon in pokemones" class="pokemon">
+            {{pokemon.name}}
+            <img :src="pokemon.image" alt="" style="height:80px; width:80px">
+        </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script>
+        Vue.component('hola', {
+            template: '<h1>Pokeguía</h1>'
+        })
 
-        <!-- Import App -->
-        <script src="./main.js"></script>
-
-        <!-- Mount App -->
-        <script>
-            const mountedApp = app.mount('#app')
-        </script>
+        var app = new Vue({
+            el: '#app',
+            data() {
+                return {
+                    pokemones: [],
+                    search: []
+                }
+            },
+            beforeCreated() {
+                return {
+                    pikachu: 'Pikachu',
+                }
+            },
+            created() {
+                this.fetch();
+            },
+            methods: {
+                fetch() {
+                    const params = {
+                        name: this.search,
+                    };
+                    let result =
+                        // Simple GET request using fetch
+                        fetch("https://pokeapi.co/api/v2/pokemon", {
+                            params
+                        })
+                        .then(response => response.json())
+                        .then(data => (this.pokemones = data.results));
+                },
+                searchData() {
+                    this.fetch();
+                }
+            }
+        })
+    </script>
+    <style scoped>
+        #app {
+            color: #000;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            max-width: 800px;
+            margin: 3rem auto;
+        }
+    </style>
 </body>
 
 </html>
+
+<!-- Notas -->
+<!-- A vue component can go through 4 phases:
+1. creation
+-> beforecreate(), created()
+-> the created method is the best place to make API requests.
+2. mounting
+-> During this phase the things are mounted in the DOM.
+-> beforeMount(), mounted()
+-> the most commonly used method is mounted(), when the app is ready.
+3. updating
+-> triggered when a reactive property such as data or computed properties changes () or the component re-renders.
+-> beforeUpdate(), updated()
+4. unmounting 
+-> relates to the momento when the component is about to be removed from the DOM.
+-> beforeUnmount(), unmounted()
+5. MISC
+-> activated(), deactivated(), errorCaptured(), renderTracked(), renderTriggered()
+Not all of them are crucial to building your apps.
+-->
