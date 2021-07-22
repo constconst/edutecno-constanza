@@ -26,11 +26,10 @@
     <div id="app">
         <div class="columns">
             <div class="column">
-                <hola></hola>
+
             </div>
             <div class="column">
-
-                <input v-model="search" value="Pikachu" id="first_name2" type="text" class="input is-warning" v-on:keyup.enter="searchData">
+                <input v-model="search" value="Pikachu" type="text" class="input is-warning" v-on:keyup.enter="searchData">
             </div>
             <div class="column">
                 <button class="button is-warning is-rounded" v-on:click="searchData">
@@ -39,50 +38,39 @@
             </div>
         </div>
 
-        <div v-for="pokemon in pokemones" class="pokemon">
+        <div class="pokemon">
             {{pokemon.name}}
-            <img :src="pokemon.image" alt="" style="height:80px; width:80px">
+            <img :src="pokemon.sprites.front_default" alt="" style="height:80px; width:80px">
         </div>
     </div>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script>
-        Vue.component('hola', {
-            template: '<h1>Pokeguía</h1>'
-        })
-
         var app = new Vue({
             el: '#app',
-            data() {
-                return {
-                    pokemones: [],
-                    search: []
-                }
+            data: {
+                pokemon: [],
+                search: ""
             },
             beforeCreated() {
-                return {
-                    pikachu: 'Pikachu',
-                }
+
             },
             created() {
-                this.fetch();
+                this.fetch('Pikachu');
             },
             methods: {
-                fetch() {
-                    const params = {
-                        name: this.search,
-                    };
+                fetch(name) {
+                    name = name.toLowerCase();
+                    console.log(name);
                     let result =
                         // Simple GET request using fetch
-                        fetch("https://pokeapi.co/api/v2/pokemon", {
-                            params
-                        })
+                        fetch(`https://pokeapi.co/api/v2/pokemon/${name}`)
                         .then(response => response.json())
-                        .then(data => (this.pokemones = data.results));
+                        .then(data => this.pokemon = data);
                 },
                 searchData() {
-                    this.fetch();
+                    this.fetch(this.search);
                 }
             }
         })
